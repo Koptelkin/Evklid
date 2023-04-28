@@ -1,0 +1,1590 @@
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/montserrat-regular.woff), url(../fonts/montserrat-regular.woff2);
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/montserrat-bold.woff), url(../fonts/montserrat-bold.woff2);
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/montserrat-extrabold.woff), url(../fonts/montserrat-extrabold.woff2);
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/montserrat-semibold.woff), url(../fonts/montserrat-semibold.woff2);
+}
+
+:root {
+    --white: #FFFFFF;
+    --default: #333333;
+    --footer-gray: #CACACA;
+    --orange: #FF9900;
+    --footer: #000000;
+    --footer-form: #414141;
+    --red: #E1670E;
+    --gray: #666666;
+    --black: #000000;
+}
+
+html {
+    font-family: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1920px;
+    min-width: 320px;
+    width: 100%;
+    margin: auto;
+    padding: 0 75px;
+}
+
+.orange-button {
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+    padding: 18.4px 38px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    border-radius: 16px;
+}
+
+.orange-button:hover, .orange-button:focus {
+    background: rgba(255, 153, 0, 0.7);
+}
+
+.orange-button:active {
+    background: var(--red);
+}
+
+.gray-button {
+    border: 1px solid var(--default);
+    background-color: var(--white);
+    padding: 18.4px 38px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--default);
+    margin-left: 30px;
+    border-radius: 16px;
+}
+
+.gray-button:hover, .gray-button:focus {
+    background: var(--gray);
+    color: var(--white);
+}
+
+.gray-button:active {
+    background: var(--black);
+    color: var(--white);
+}
+
+.empty-button {
+    width: 175px;
+    height: 60px;
+    padding: 20px 38px;
+    border: 1px solid var(--orange);
+    background: rgba(0, 0, 0, 0);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    border-radius: 16px;
+}
+
+.empty-button:hover, .empty-button:focus {   
+    background: var(--orange);
+}
+
+.empty-button:active {
+    background: var(--red);
+}
+
+.button-reset {
+    border: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0);
+}
+
+.main-title {
+    margin: 0;
+}
+
+/* header */
+
+.header {
+    height: 100px;
+}
+
+.header-container {
+    max-width: 1920px;
+    max-height: 100px;
+    margin: auto;
+}
+
+.header-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+}
+
+.header-logo {
+    margin: 11.6px 0;
+    margin-left: 75px;
+}
+
+.header-logo-img {
+    height: 100%;
+}
+
+.header-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav-item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.header-nav-item-link {
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--default);
+    padding: 2px;
+}
+
+.header-nav-item-link:hover {
+    border-bottom: 2px solid var(--orange);
+}
+
+.header-nav-item-link:focus {
+    border: 2px solid var(--orange); 
+}
+
+.header-nav-item-link:active {
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 80px;
+}
+
+.header-nav-search {
+    width: 24px;
+    height: 24px;
+    margin: 0 38px 0 85px;
+}
+
+.header-nav-burger {
+    width: 30px;
+    height: 30px;
+    display: none;
+    margin-left: 75px;
+}
+
+/* section-hero */
+
+.section-hero-container {
+    max-width: 1770px;
+    margin: 50px auto 0;
+    padding: 0 77px;
+    position: relative;
+    max-height: 668px;
+    background: url(../images/low-angle-photo-of-balconies-2462015\ 1.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 32px;
+}
+
+.section-hero-title {
+    max-width: 937px;
+    min-height: 170px;
+    display: inline-block;
+    margin: 100px 0 0 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    color: var(--white);
+}
+
+.section-hero-info {
+    margin: 24px 0 90px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--white);
+    height: fit-content;
+    max-width: 790px;
+}
+
+.section-hero-button {
+    padding: 25px 37px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.4581px;
+    line-height: 29px;
+    margin-bottom: 150px;
+}
+
+.section-hero-click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+.section-hero-clickable:not(:last-child) {
+    margin-right: 20px;
+}
+
+.section-hero-clickable {
+    width: 15px;
+    height: 15px;
+}
+
+/* section-description */
+
+h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--default);
+}
+
+.section-description-title {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.section-description-text {
+    margin-top: 0;
+    max-width: 1235px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--default);
+}
+
+/* section-benefits */
+
+.section-benefits-container {
+    margin-top: 50px;
+}
+
+.section-benefits-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 622px;
+}
+
+.section-benefits-left {
+    max-width: 868px;
+    min-height: 622px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(../images/Rectangle\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+}
+
+.section-benefits-image {
+    position: sticky;
+    height: 207px;
+    top: 100%;
+}
+
+.section-benefits-image-info {
+    height: 100%;
+    padding: 0 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 32px;
+}
+
+.section-benefits-image-text {
+    max-width: max-content;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--white);
+    margin-right: 139px;
+}
+
+.section-benefits-right {
+    width: 48.5%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-benefits-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 47%;
+    border: 1px solid var(--footer-gray);
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.section-benefits-item-image {
+    margin: 65px 40px 65px 40px;
+}
+
+.section-benefits-item-info {
+    margin: 0 30px 0 0;
+}
+
+.section-benefits-item-info-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2;
+    color: var(--default);
+    margin: 0px 0px 8px 0px;
+    white-space: nowrap;
+}
+
+.section-benefits-item-info-text {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 16px;
+    color: var(--default);
+}
+
+/* section-stages */
+
+.section-stages-container {
+    margin-top: 100px;
+}
+
+.section-stages-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 45px 0;
+    width: 25%;
+    white-space: nowrap;
+}
+
+.section-stages-list-link:not(:last-child) {
+    margin-right: 60px;
+}
+
+.section-stages-list-link:hover {
+    color: var(--orange);
+}
+
+.section-stages-list-link:focus {
+    border: 2px solid var(--orange);
+}
+
+.section-stages-list-link:active {
+    color: var(--red);
+}
+
+.section-stages-list-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.tabs-button:focus {
+    border: 1px solid #FF9900;
+}
+
+.section-stages-content {
+    display: none;
+}
+
+.section-stages-content-active {
+    display: block;
+}
+
+.section-stages-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-stages-left {
+    max-width: 758px;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.section-stages-wrapper-title {
+    margin: 0;
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.section-stages-wrapper-text {
+    margin: 8px 0 50px 0;
+    max-width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.section-stages-right {
+    max-width: 870px;
+    min-height: 460px;
+}
+
+.section-stages-wrapper-image {
+    width: 100%;
+    height: 100%;
+}
+
+.section-stages-wrapper-image-media {
+    display: none;
+    max-width: 437px;
+    min-height: 689px;
+}
+
+/* section-faq */
+
+.section-faq-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-faq-title {
+    margin-bottom: 32px;
+}
+
+.section-faq-item {
+    padding: 39px 0;
+    border: 1px solid var(--footer-gray);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-faq-item:last-child {
+    border-bottom: 1px solid var(--footer-gray);
+}
+
+.section-faq-item-text {
+    display: inline-block;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--default);
+}
+
+.section-faq-item-info {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.section-faq-item:hover .section-faq-item-info-icon path {
+    fill: var(--white);
+}
+
+/* transition: fill 0.5s linear; */
+
+.section-faq-item:hover .section-faq-item-info-icon ellipse {
+    fill: var(--orange);
+}
+
+.section-faq-item:hover .section-faq-item-text {
+    color: var(--orange);
+}
+
+.section-faq-item:hover {
+    border-color: var(--orange);
+}
+
+
+/* footer */
+
+.footer-container {
+    background-color: var(--footer);
+    max-width: 1920px;
+    margin: auto;
+}
+
+.footer-wrapper {
+    margin: 0 75px;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-reference {
+    margin: 0 350px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-reference-list {
+    margin: 20px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.footer-reference-list-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    color: var(--footer-gray);
+    padding: 5px;
+}
+
+.footer-reference-list-link:hover {
+    color: var(--orange);
+}
+
+.footer-reference-list-link:focus {
+    border: 2px solid var(--orange);
+}
+
+.footer-reference-list-link:active {
+    color: var(--red);
+}
+
+.footer-reference-overall {
+    display: inline-block;
+    width: 63px;
+    height: 63px;
+    
+}
+
+.footer-reference-overall:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footer-reference-overall:hover .footer-reference-fb path, 
+.footer-reference-overall:hover .footer-reference-vk path,
+.footer-reference-overall:hover .footer-reference-inst path {
+    fill: var(--orange);
+}
+
+.footer-reference-overall:focus {
+    border: 2px solid var(--orange);
+}
+
+.footer-reference-overall:active .footer-reference-fb path, 
+.footer-reference-overall:active .footer-reference-vk path,
+.footer-reference-overall:active .footer-reference-inst path {
+    fill: var(--red);
+}
+
+.footer-form {
+    margin-right: 226px;
+    max-width: 570px;
+}
+
+.footer-form-title {
+    margin: 0;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--footer-gray);
+}
+
+.input, .input-big {
+    margin-top: 25px;
+    width: 100%;
+    background-color: var(--footer-form);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--footer-gray);
+    padding: 0 24px;
+    text-align: start;
+    border-radius: 16px;
+}
+
+.input {
+    height: 60px;
+}
+
+.input-big {
+    height: 150px;
+}
+
+.footer-button {
+    margin-right: 20px;;
+    padding: 19px 52px;
+}
+
+.footer-agreement {
+    position: relative;
+}
+
+.input-check-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    color: var(--footer-gray);
+    white-space: nowrap;
+}
+
+
+.footer-confirmation {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.footer-info {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer-info-text {
+    max-height: 384px;
+    max-width: 450px; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--footer-gray);
+    margin: 0;
+}
+
+@media (min-width: 1025px) and (max-width: 1919px) {
+
+    .section-hero-container {
+        margin: 50px 75px 0;
+    }
+
+    .footer-reference {
+        margin-right: 125px;
+    }
+
+    .footer-form {
+        margin-right: 100px;
+        max-width: 570px;
+    }
+
+}
+
+@media (max-width: 1760px) and (min-width: 1025px) {
+
+    .section-benefits-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-benefits-right {
+        max-width: 100%;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .section-benefits-left {
+        max-width: 100%;
+    }
+
+    .section-benefits-item {
+        min-width: 55%;
+        margin-top: 30px;
+    }
+
+    .section-benefits-image-text {
+        max-width: 55%;
+    }
+
+}
+
+@media (max-width: 1760px) and (min-width: 1301px) {
+    .empty-button {
+        padding: 30px 50px;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .footer-info {
+        display: none;
+    }
+
+    .footer-form {
+        max-width: 570px;
+        margin-right: 0px;
+    }
+
+    .footer-reference {
+        margin-right: 100px;
+    }
+
+    .footer-wrapper {
+        justify-content: space-around;
+        margin: 0 50px;
+    }
+
+    .section-stages-left {
+        height: inherit;
+        margin-right: 30px;
+    }
+
+    .section-stages-right {
+        min-width: 550px;
+    }
+
+    .footer-button {
+        padding: 19px 42px;
+    }
+
+}
+
+
+@media (max-width: 1300px) {
+    .header-nav-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .section-hero-container {
+        margin: 50px 50px 0;
+    }
+
+}
+
+@media (max-width: 1160px) and (min-width: 1025px) {
+
+    .section-hero-title {
+        font-size: 60px;
+        line-height: 73px;
+    }
+
+    .section-hero-info {
+        font-size: 20px;
+    }
+
+    .gray-button {
+        margin-left: 0px;
+    }
+
+    .section-stages-left {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .header-nav-list {
+        display: none;
+    }
+
+    .header-nav-burger {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .header-nav-search {
+        margin-right: 50px;
+    }
+
+    .section-hero-container {
+        height: 668px;
+        width: 90%;
+        background: url(../images/low-angle-photo-of-balconies-2462015\ 1.jpg);
+        background-size: cover;
+    }
+
+    .swiper-slide {
+        padding: 0 50px;
+    }
+
+    .section-hero-title {
+        font-size: 60px;
+        line-height: 73px;
+        margin: 130px auto 0;
+        min-height: auto;
+    }
+
+    .section-hero-info {
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-top: 16px;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .section-benefits-wrapper {
+        flex-direction: column;
+    }
+
+    .section-benefits-left {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .section-benefits-right {
+        max-width: 100%;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .section-benefits-item {
+        width: 100%;
+        height: auto;
+        margin-top: 32px;
+    }
+
+    .section-benefits-item-info {
+        margin-right: 35px;
+    }
+
+    .section-benefits-item-info-title {
+        white-space: normal;
+    }
+
+    .section-stages-container {
+        margin-top: 80px;
+    }
+
+    .section-stages-list {
+        width: fit-content;
+    }
+
+    .section-stages-left {
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section-stages-right {
+        min-width: auto;
+    }
+
+    .section-stages-wrapper-image {
+        display: none;
+    }
+
+    .section-stages-wrapper-text {
+        width: auto;
+        font-size: 15px;
+    }
+
+    .section-stages-wrapper-image-media {
+        display: block;
+        height: 100%;
+    }
+
+    .section-stages-button {
+        width: 200px;
+    }
+
+    .gray-button {
+        margin: 20px 0 0 0;
+        width: 160px;
+    }
+
+    .section-faq-item-text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .footer-wrapper {
+        margin: 0 50px;
+    }
+
+    .footer-info {
+        display: none;
+    }
+
+    .input, .input-big {
+        width: 100%;
+    }
+
+    .footer-button {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .input-check-text {
+        white-space: normal;
+    }
+
+    .footer-reference {
+        margin-right: 25px;
+    }
+
+    .footer-form {
+        margin-right: 0px;
+    }
+}
+
+
+@media (max-width: 810px) {
+
+    .header-logo {
+        margin-left: 0px;
+    }
+
+    .header-nav-search {
+        margin-left: 0px;
+    }
+
+    .section-hero-title {
+       margin-top: 100px; 
+    }
+
+    .section-hero-button {
+        margin: 0;
+    }
+
+    .section-hero-container {
+        margin: 40px 35px 0;
+        padding: 0 40px;
+    }
+
+    .container {
+        padding: 0 35px;
+    }
+
+    .section-hero-title {
+        font-size: 50px;
+        line-height: 61px;
+    }
+
+    .section-hero-info {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .section-description-title {
+        margin-top: 80px;
+    }
+
+    .section-benefits-image {
+        height: 50%;
+    }
+
+    .section-benefits-image-info {
+        padding: 20px 40px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .section-benefits-image-text {
+        margin: 0 0 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .empty-button {
+        font-size: 15px;
+    }
+
+    .section-benefits-item-image {
+        width: 115px;
+        height: 100px;
+        margin: 20px 16px 0 20px;
+    }
+
+    .section-benefits-item-info {
+        margin: 35px 20px 35px 20px;
+    }
+
+    .section-stages-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .section-stages-right  {
+        min-height: 184px;
+    }
+
+    .section-stages-left {
+        margin: 38px 0 0 0;
+        display: block;
+    }
+
+    .section-stages-list {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .section-stages-list-link:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .section-stages-wrapper-image {
+        display: block;
+    }
+
+    .section-stages-wrapper-text {
+        margin: 8px 0 20px 0;
+    }
+
+    .gray-button {
+        margin: 0 0 0 30px;
+    }
+
+    .section-stages-wrapper-image-media {
+        display: none;
+    }
+
+    .section-faq-item-text {
+        width: 570px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .footer-reference-list {
+        display: none;
+    }
+
+    .footer-reference {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-benefits-item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+    
+    .header-logo {
+        margin-left: 20px;
+    }
+
+    .header-logo-img {
+        width: 150px;
+    }
+
+    .header-nav-burger {
+        margin-left: 20px;
+    }
+
+    .header-nav-search {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 20px 0;
+        padding: 0 30px;
+        height: 60%;
+    }
+
+    .section-hero-title {
+        margin-top: 80px;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .section-hero-click {
+        left: auto;
+    }
+
+    .section-hero-info {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .orange-button {
+        width: 180px;
+        font-size: 14px;
+        padding: 15px 12px;
+    }
+
+    .section-hero-button {
+        margin-bottom: 96px;
+        position: unset;
+    }
+
+    .section-description-title {
+        margin-top: 60px;
+    }
+
+    .footer-wrapper {
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .footer-reference {
+        margin-right: 0px;
+    }
+
+    .footer-confirmation {
+        flex-direction: column;
+    }
+
+    .footer-agreement {
+        margin-top: 16px;
+    }
+
+    .section-benefits-left {
+        min-height: 459px;
+    }
+
+    .section-benefits-item {
+        align-items: start;
+    }
+
+    .section-benefits-item-info {
+        margin: 15px;
+    }
+
+    .section-benefits-item-image {
+        margin: 15px 0 15px 15px;
+    }
+
+    .section-stages-list-link:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .section-benefits-image-info {
+        padding: 20px;
+    }
+
+    .section-stages-container {
+        margin-top: 60px;
+    }
+
+    .section-stages-list {
+        margin: 20px 0;
+    }
+
+    .section-stages-right {
+        min-height: 150px;
+    }
+
+    .section-stages-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gray-button {
+        margin: 15px 0 0 0;
+        font-size: 14px;
+        padding: 15px 12px;
+    }
+
+    .footer-form-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 320px) {
+    .input, .input-big {
+        width: 290px;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .footer-wrapper {
+        margin: 0 15px;
+    }
+
+    .footer-form-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    .footer-confirmation {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .footer-agreement {
+        margin-top: 11px;
+    }
+
+    .footer-button {
+        width: 180px;
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+
+    .footer-reference {
+        margin: 33px auto 0 auto;
+        align-items: center;
+    }
+
+    .footer-logo-img {
+        width: 131px;
+        height: 42px;
+        margin: 0 auto;
+    }
+
+    .footer-reference-overall, .footer-reference-overall svg  {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-reference-social-network {
+        margin-top: 16px;
+    }
+
+    .section-description-title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 60px;
+    }
+
+    .section-description-text {
+        font-size: 14px;
+    }
+
+    .section-faq-item-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .section-faq-item-info, .section-faq-item-info svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container {
+        padding: 0 14px 0 16px;
+    }
+
+    .main-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .section-faq-title {
+        margin-bottom: 16px;
+    }
+
+    .section-faq-container {
+        margin: 60px 0;
+    }
+
+    .gray-button {
+        width: 118px;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 12px 30px;
+    }
+
+    .orange-button {
+        padding: 12px 15px;
+        width: 155px;
+        font-size: 12px;
+        line-height: 15px;
+        white-space: nowrap;
+    }
+
+    .footer-button-size {
+        width: 180px;
+        height: 40px;
+    }
+
+    .section-stages-container {
+        margin-top: 0;
+    }
+    
+    .section-stages-wrapper-text {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+
+    .section-stages-wrapper-title {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .section-stages-right {
+        min-height: 155px;
+    }
+
+    .section-stages-left {
+        margin-top: 16px;
+    }
+
+    .section-stages-list {
+        margin: 16px 0;
+    }
+
+    .section-stages-list-link:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .section-stages-list-link {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .section-benefits-container {
+        margin: 8px 0 60px 0;
+    }
+
+    .section-benefits-item {
+        flex-direction: column;
+        align-items: start;
+        border: 0;
+        width: 100%;
+    }
+
+    .section-benefits-item-info-text {
+        font-size: 14px;
+    }
+
+    .section-benefits-item-image {
+        width: 64px;
+        height: 49px;
+        margin: 0 0 12px 0;
+    }
+
+    .section-benefits-item-info {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .section-benefits-item-info-title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 4px;
+        white-space: normal;
+    }
+    
+    .section-benefits-left {
+        min-height: 190px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        margin-bottom: 200px;
+    }
+
+    .section-benefits-image {
+        position: relative;
+        top: 200px;
+    }
+
+    .section-benefits-image-info {
+        margin-top: 4px;
+        flex-direction: column;
+        align-items: start;
+        background: 0;
+        padding: 0;
+    }
+
+    .section-benefits-image-text {
+        color: var(--default);
+        margin: 0;
+        font-size: 14px;
+        margin-bottom: 8px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .empty-button {
+        color: var(--orange);
+        width: 162px;
+        height: 40px;
+        padding: 12px 15px;
+        font-size: 12px;
+        line-height: 15px;
+        border: 2px solid var(--orange);
+    }
+
+    .empty-button:hover {
+        background: var(--red);
+    }
+    
+    .empty-button:focus {   
+        background: var(--white);
+    }
+    
+    .empty-button:active {
+        background: var(--red);
+    }
+
+    .section-hero-container {
+        margin: 30px 15px 0;
+        padding: 0 22px;
+        width: 290px;
+        height: 100%;
+    }
+
+    .section-hero-clickable, .section-hero-clickable svg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .section-hero-click {
+        left: 41%;
+        bottom: 15px;
+    }
+
+    .section-hero-title {
+        margin-top: 60px;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .section-hero-info {
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        margin: 6px 0 32px 0;
+    }
+
+    .section-hero-button {
+        margin-bottom: 63px;
+    }
+
+    .header-container {
+        height: 69px;
+    }
+
+    .header-nav-burger {
+        margin-left: 15px;
+    }
+
+    .header-logo {
+        margin: 0 0 0 30px;
+        
+    }
+
+    .header-logo-img {
+        width: 110px;
+        height: 35px;
+    }
+
+    .header-nav-search {
+        margin: 0 15px 0 0;
+    }
+}
+
+.swiper-slide {
+    padding: 0 65px;
+    width: auto;
+}
+
+.swiper-wrapper {
+    box-sizing: border-box;
+}
+
+.swiper-pagination {
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 12px;
+    --swiper-pagination-fraction-color: #000000;
+    --swiper-pagination-bullet-horizontal-gap: 15px;
+    --swiper-theme-color: var(--white);
+    --swiper-pagination-bottom: 20px;
+}
+
+.slide1 {
+    background-image: url(../images/low-angle-photo-of-balconies-2462015\ 1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide2 {
+    background-image: url(../images/hero-pic-1920-2.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide3 {
+    background-image: url(../images/hero-pic-1920-3.png);
+    background-position: center center;
+    background-size: cover;
+}

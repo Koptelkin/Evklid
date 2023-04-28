@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .burger {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #333;
+            background-color: #f2f2f2;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: absolute;
+            z-index: 10;
+            background-color: #f2f2f2;
+            width: 400px;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            transition: transform .3s ease-in-out;
+            transform: translateX(-101%);
+            
+        }
+
+        .menu.is-active {
+            transform: none;
+        }
+
+        .alert {
+            border: 2px solid #db612d;
+            color: #db612d;
+        }
+
+    </style>
+    <script src="testing.js"></script>
+</head>
+<body>
+    <div id="menu" class="menu">
+        <ul>
+            <li>menu 1</li>
+            <li>menu 2</li>
+            <li>menu 3</li>
+        </ul>
+    </div>
+    <div class="burger" id="burger"></div>
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium amet dolore explicabo itaque aliquam nisi quis
+        atque numquam eius ea.
+    </p>
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium amet dolore explicabo itaque aliquam nisi quis
+        atque numquam eius ea.
+    </p>
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium amet dolore explicabo itaque aliquam nisi quis
+        atque numquam eius ea.
+    </p>
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium amet dolore explicabo itaque aliquam nisi quis
+        atque numquam eius ea.
+    </p>
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium amet dolore explicabo itaque aliquam nisi quis
+        atque numquam eius ea.
+    </p>
+
+</body>
+</html>
